@@ -1,0 +1,472 @@
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+html
+	{
+		font-size: 18px
+	}
+body
+	{
+		font-family: 'Roboto', sans-serif;
+		color: #7a7a7a;
+		font-size: 0.8rem;
+	}
+.container
+	{
+		width: 1140px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+header
+	{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+.nav-bg
+	{
+		background-color:rgba(0,0,0,.5);
+		height: 3rem;				
+	}
+.nav-bar
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+.nav-bar a img
+	{
+		padding: 1rem 0 1rem 0;
+	}
+
+.nav-bar .navigation li 
+	{
+		display: inline-block;
+		color: #ffffff;
+		padding: 1rem 1rem;
+		text-decoration: none;
+		list-style:none;
+		font-weight: 300;
+		letter-spacing: 1px; 
+		transition: all 0.3s ease-in-out;
+	}
+.nav-bar .navigation li a
+	{
+		display: block;
+		text-decoration: none;
+		color:white;
+	}
+
+.nav-bar .login-buttons li 
+	{
+		color: white;
+		list-style:none;
+		text-decoration: none;
+		display: inline-block;
+		padding:1rem 0;
+		font-weight: 300;
+		letter-spacing: 1px; 
+
+	}
+.login-buttons li a
+	{
+		display: block;
+		text-decoration: none;
+		color:white;
+
+	}
+.navigation li a
+	{
+		transition: all 0.3s ease-in-out;
+	}
+.navigation li a:hover
+	{
+		color: #008bcb;
+	}
+.banner
+	{
+		max-width: 100%;
+		height: auto;
+		position: relative;
+	}
+.banner-inner
+	{
+  		
+  		position: absolute;
+  		transform: translate(-50%, -50%);
+  		top:55%;
+  		left:50%;
+  		text-align: center;
+  		color:#ffffff; 
+  		font-size: 1rem;
+  		font-weight: 400;
+		letter-spacing: 1px; 
+  				
+  	}
+
+.banner-button
+	{
+		box-sizing: border-box;
+		background-color: #008bcb;
+ 		border: none;
+  		color: white;
+  		font-weight: 400;
+		padding: 0.8rem 2rem;
+		text-align: center;
+		font-size: 1rem;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+		display: inline-block;
+		margin-top: 1rem;		
+	}
+.banner-button:hover
+	{
+		background-color: #0379af;
+	}
+.border
+	{
+		border-bottom: 1px solid lightgrey;
+	}
+.inner-container
+	{
+		margin-left: 7rem;
+		margin-right: 7rem;		
+	}
+.heading 
+	{
+		font-size: 2.2rem;
+		color: #008bcb;
+		font-weight: 300;
+		letter-spacing: 2px;
+	}
+.management
+	{
+    	display: flex;
+    	flex-wrap: nowrap;
+    	justify-content: space-between;
+    	align-items: center;
+    	align-content: center;
+    }	
+.border:nth-child(even) .management
+	{
+		flex-direction: row;
+	}
+.border:nth-child(odd) .management
+	{
+		flex-direction: row-reverse;
+	}
+.management div
+	{
+		width: 50%;
+	}
+.management img
+	{
+		
+		margin-top: 3rem; 
+	}	
+.management h3
+	{
+		text-align: left;
+		font-size: 2.2rem;
+		color: #008bcb;
+		font-weight: 300;
+		letter-spacing: 2px;		
+	}
+.management p
+	{
+		margin-top: 1rem;
+		text-align: left;
+		color: #7a7a7a;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+.accessible-img
+	{
+		text-align: center;	
+  		margin-top: 3rem;
+  		margin-bottom: 3rem;
+	}
+	
+.accessible-img img
+	{
+		margin-top: 3rem;
+		max-width: 100%;	
+	}
+.business-success
+	{
+		text-align: center;
+  		color: #008bcb;
+  		margin-top: 3rem;	
+	}
+.success-controls
+	{
+		margin-top: 3rem;
+		display: flex;
+  		align-items: center;
+		flex-wrap: nowrap;
+  		justify-content: space-between;
+  		margin-bottom: 3rem;
+
+	}
+	/*.controls
+	{
+		display: flex;
+  		align-items: center;
+  		flex-direction: row;
+  		flex-wrap: wrap;
+  		color: black;
+  		list-style: none;
+  		margin-bottom: 2rem;
+  		justify-content: space-between;
+  	}*/
+ .success-controls .list
+ 	{
+ 		list-style: none;
+ 		padding-left: 1rem;
+ 	}
+ .success-controls .list:first-child
+ 	{
+ 		padding-left: 0;
+ 	}
+ .success-controls .list:last-child
+ 	{
+ 		padding-right: 0;
+ 	}
+
+
+ 
+ .controls
+  	{
+  		position: relative;
+  		display: block;
+  		margin-bottom: 2rem;
+  	}
+
+.controls img
+  	{
+  		
+  		position: absolute;
+  		top:0;
+  		left:0;
+  		margin-top: -0.2rem;
+  	}
+
+.controls p
+  	{
+  		font-size: 0.8rem;
+  		color: #7a7a7a;
+  		margin-left: 3rem;
+  		font-weight: 300;
+  	}
+ .controls h6
+  	{
+  		color: #7a7a7a;
+  		margin-left: 3rem;
+  		font-weight: 300;
+  		font-size: 1rem;
+  	}
+
+ .plan-bg
+  	{
+  		 background-color: #f9f9f9;
+  	}
+ 
+.our-plan 
+	{
+		text-align: center;
+  		color: #008bcb;
+  		padding-top: 3rem;
+	}
+.plans ul
+	{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		display: flex;
+
+	}
+.plans li
+	{
+		box-sizing: border-box;
+		border: 0.1rem solid #e2e2e2;
+  		padding: 1.4rem 0.4rem;
+  		list-style: none;
+  		text-align: center;	
+  		margin: 1rem 0.5rem;
+  		background-color: #ffffff;
+  		flex: 1;
+  		display: flex;
+		flex-direction: column;
+		
+		justify-content: space-between;
+		align-items: center;
+
+			
+	}
+.plans li h4
+	{
+		color: #008bcb;
+		font-weight: 400;
+  		font-size: 1.2rem;
+	
+	}
+.plans li p
+	{
+		color: #7a7a7a;
+  		font-weight: 300;
+  		font-size: 0.8rem;
+	
+	}
+.plans li p.clr
+	{
+		color: #008bcb;
+  		
+	
+	}
+.list-border
+	{
+		border-bottom: solid 1px #e2e2e2;
+		padding: 1rem 0;		 
+	}
+.button-size
+	{
+		display: flex;
+		width: 88%;
+	}
+
+		
+.plan-list button
+	{
+		border: none;
+    	padding: 0.8rem 1rem;
+    	margin-top: 1rem;
+		background: #008bcb;
+    	color: #ffffff;	
+    	transition: all 0.3s ease-in-out;
+    	flex-basis: 100%;
+    	
+	}
+.plan-list button:hover
+	{
+		background-color: #0379af;
+	}
+.plan-list button img
+	{
+		margin-right: 0.5rem;
+	}
+
+.footer-elements
+	{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		
+	}
+.footer-elements ul
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+.footer-elements li
+	{
+		list-style: none;
+  		flex:1;
+		color: #7a7a7a;
+		
+	}
+	}
+.about img
+	{
+		margin-bottom: 2rem;
+	}
+.about h6
+	{
+		
+		margin-bottom: 2rem;
+		color: #008bcb;
+		font-weight: 400;
+  		font-size: 1rem;
+	}
+.about p
+	{
+		font-weight: 300;
+  		font-size: 0.8rem;
+	}
+ .about .about-text
+	{
+		margin-top:2rem;
+		width:90%;
+	}
+
+.about a
+	{
+		text-decoration: none;
+		color: #7a7a7a;
+		margin-bottom: 0.8rem;
+		display: block;
+		font-weight: 300;
+  		font-size: 0.8rem;
+		transition: all 0.3s ease-in-out;
+	}
+.about a:hover
+	{
+		color: #008bcb;
+	}
+.container .copyright
+	{
+		margin: 1rem 0;
+		font-size: 0.7rem;
+	}
+
+@media(max-width: 1199px)
+	{
+		html
+		{
+			font-size: 16px;
+		}
+	}
+@media(max-width: 991px)
+	{
+		html
+		{
+			font-size:14px;
+		}
+	}
+@media(max-width: 767px)
+{
+	html
+	{
+		font-size:14px; 
+
+	}
+	.management img
+	{
+		
+		max-width: 50%;	
+	}
+	
+	.controls img
+	{
+		max-width: 17%;
+	}
+
+	.plan-list button img
+	{
+		width:20%;
+	}
+	.plan-list button
+	{
+		font-size: 0.7rem;
+	}
+
+}
+
